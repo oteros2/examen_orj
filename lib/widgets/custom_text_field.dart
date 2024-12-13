@@ -29,7 +29,7 @@ final Map<String,String>? formValues;
         print('Valores de formValues: ${formValues.toString()}');
       },*/
       validator: (value){
-        if(value!.length < 3){
+        if(value!.length < 6){
           return 'Mínimo 3 caracteres';
         }
       },
