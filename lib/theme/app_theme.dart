@@ -37,6 +37,10 @@ class AppTheme {
       ),
     ),
 
+    listTileTheme: const ListTileThemeData(iconColor: primary),
+
+    scaffoldBackgroundColor: const Color.fromARGB(255, 214, 207, 207),
+
     //InputDecoraion
     inputDecorationTheme: InputDecorationTheme(
       floatingLabelStyle: const TextStyle(color: primary),
