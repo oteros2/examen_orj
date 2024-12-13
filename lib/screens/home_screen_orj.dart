@@ -18,9 +18,9 @@ class HomeScreenOrj extends StatelessWidget {
             onPressed: (()=> Navigator.push(context, MaterialPageRoute(builder: (context) => const SigninScreenOrj()))),
             child: const Text('Sing In')),
             const SizedBox(height: 20),
-            ElevatedButton(
-            onPressed: ((){}),
-            child: const Text('Sing Up')),
+            const ElevatedButton(
+            onPressed: null,
+            child: Text('Sing Up')),
           ],
         ),
       )
