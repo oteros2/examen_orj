@@ -8,26 +8,28 @@ class SigninScreenOrj extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: <Widget>[
-          const FlutterLogo(size: 100),
-          const SizedBox(height: 20),
-          const CustomTextFormField(
-            hintText: 'usuario',
-            suffixIcon: Icons.person_add_rounded,
-            obscureText: false,
-          ),
-          const SizedBox(height: 20),
-          const CustomTextFormField(
-              hintText: '********', labelText: 'Contraseña', obscureText: true),
-          const SizedBox(height: 20),
-          ElevatedButton(
-              onPressed: (() => Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => const ListViewScreenOrj()))),
-              child: const Text('Sing In')),
-        ],
+      body: Center(
+        child: Column( mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            const FlutterLogo(size: 100),
+            const SizedBox(height: 20),
+            const CustomTextFormField(
+              hintText: 'usuario',
+              suffixIcon: Icons.person_add_rounded,
+              obscureText: false,
+            ),
+            const SizedBox(height: 20),
+            const CustomTextFormField(
+                hintText: '********', labelText: 'Contraseña', obscureText: true),
+            const SizedBox(height: 20),
+            ElevatedButton(
+                onPressed: (() => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const ListViewScreenOrj()))),
+                child: const Text('Sing In')),
+          ],
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () => Navigator.pop(context),

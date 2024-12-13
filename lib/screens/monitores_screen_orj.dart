@@ -23,26 +23,28 @@ class MonitoresScreenOrj extends StatelessWidget {
         ],
       ),
       body: const SingleChildScrollView(
-        child: Column(
-          children: [
-            CustomAvatar(
-              imageUrl:
-                  'https://www.rctb1899.es/sites/default/files/noticia/imatge/2495_1.jpg',
-              title: 'Rafa Nadal',
-            ),
-            SizedBox(height: 20),
-            CustomAvatar(
-              imageUrl:
-                  'https://pbs.twimg.com/profile_images/1701651173822898176/v_01vBPF_400x400.jpg',
-              title: 'Gisela Pulido',
-            ),
-            SizedBox(height: 20),
-            CustomAvatar(
-              imageUrl:
-                  'https://img2.rtve.es/imagenes/doblete-oro-mireia-belmonte/1292451570832.jpg',
-              title: 'Mireia Belmonte',
-            ),
-          ],
+        child: Center( 
+          child: Column( mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              CustomAvatar(
+                imageUrl:
+                    'https://www.rctb1899.es/sites/default/files/noticia/imatge/2495_1.jpg',
+                title: 'Rafa Nadal',
+              ),
+              SizedBox(height: 20),
+              CustomAvatar(
+                imageUrl:
+                    'https://pbs.twimg.com/profile_images/1701651173822898176/v_01vBPF_400x400.jpg',
+                title: 'Gisela Pulido',
+              ),
+              SizedBox(height: 20),
+              CustomAvatar(
+                imageUrl:
+                    'https://img2.rtve.es/imagenes/doblete-oro-mireia-belmonte/1292451570832.jpg',
+                title: 'Mireia Belmonte',
+              ),
+            ],
+          ),
         ),
       ),
     );

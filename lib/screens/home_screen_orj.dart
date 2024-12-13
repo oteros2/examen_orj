@@ -10,9 +10,10 @@ class HomeScreenOrj extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
            const FlutterLogo(size: 100),
-           const SizedBox(height: 20),
+           const SizedBox(height: 60),
            ElevatedButton(
             onPressed: (()=> Navigator.push(context, MaterialPageRoute(builder: (context) => const SigninScreenOrj()))),
             child: const Text('Sing In')),
